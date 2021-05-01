@@ -1,0 +1,390 @@
+body {
+    background-color: #0322BA;
+    background-image: url('../images/ddr-bg.jpg');
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px;
+}
+
+.bg_image {
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+/* --- Index --- */
+
+#buttContainer {
+    position: relative;
+    top: 15%;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    height: 10%;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    background-color: #101010;
+    box-shadow: 0 9px #000000;
+    font-family: Helvetica;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.button:hover {
+    background-color: #515151;
+}
+
+.button:active {
+    background-color: #515151;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+}
+
+#play {
+    margin-top: 25px;
+    font-size: 2em;
+}
+
+#howToPlay,
+#leaderboard {
+    height: 8%;
+    width: 50%;
+    font-size: 1em;
+}
+
+/* --- Song Select --- */
+
+.song {
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+    height: 8%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #101010;
+    box-shadow: 0 9px #000000;
+    font-family: Helvetica;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+.song:hover {
+    background-color: #515151;
+}
+
+.song:active {
+    background-color: #515151;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+}
+
+/* --- How to Play */
+
+#howToPlayDiv {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+h4 {
+    margin-top: -2.5%;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    line-height: 200%;
+    font-family: Helvetica;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+/* --- Leaderboard --- */
+
+#back {
+    margin-top: 10%;
+    height: 8%;
+    width: 30%;
+    font-size: 1em;
+}
+
+#backMorePadding {
+    margin-top: 50%;
+    height: 8%;
+    width: 30%;
+    font-size: 1em;
+}
+
+#lb {
+    margin: auto;
+    margin-top: -5%;
+    top: 5%;
+    width: 100%;
+    border-spacing: 0 1em;
+    font-family: Helvetica;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+.lbRow {
+    background-color: #101010;
+}
+
+.lbName {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.lbScore {
+    padding: 10px;
+    text-align: right;
+    border-radius: 0 5px 5px 0;
+}
+
+/* --- Game --- */
+
+.arrows {
+    display: inline-block;
+    width: 100%;
+    padding-top: 6em;
+}
+
+.arrowsImg {
+    padding: 10px;
+    max-width: 15%;
+    max-height: 15%;
+    position: absolute;
+}
+
+#left, #leftGlow {
+    left: 10%;
+}
+
+/* #leftGlow {
+    left: 10%;
+} */
+
+#up, #upGlow {
+    left: 30%;
+}
+
+#down, #downGlow {
+    left: 50%;
+}
+
+#right, #rightGlow {
+    left: 69%;
+}
+
+.glow {
+    -webkit-filter: drop-shadow(0 0 0.6rem #ffffff );
+  filter: drop-shadow(0 0 0.6rem #ffffff);
+  max-width: 15%;
+    max-height: 15%;
+    padding: 10px;
+}
+
+.glowPink {
+    -webkit-filter: drop-shadow(0 0 0.6rem #FF29C8 );
+  filter: drop-shadow(0 0 0.6rem #FF29C8);
+  max-width: 15%;
+    max-height: 15%;
+    padding: 10px;
+    visibility: hidden;
+}
+
+.header {
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 0.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Helvetica;
+}
+
+h3.label {
+    color: white;
+    line-height: 0.1em;
+    padding-bottom: 0em;
+}
+
+#start {
+    color: white;
+    font-size: 2em;
+    /* border: 2px solid white; */
+    border: none;
+    border-radius: 5px;
+    padding-top: 0.25em;
+    background-color: #00D2C3;
+    box-shadow: 0 5px #00C1B3;
+}
+
+#start:hover {
+    /* color: blue;
+    border: 2px solid blue; */
+    background-color: #82F7F5;
+}
+
+#quit {
+    /* color: white;
+    font-size: 2em;
+    border: 2px solid white; */
+    color: white;
+    font-size: 2em;
+    /* border: 2px solid white; */
+    border: none;
+    border-radius: 5px;
+    padding-top: 0.25em;
+    background-color: #00D2C3;
+    box-shadow: 0 5px #00C1B3;
+}
+
+#quit:hover {
+    /* color: rgb(207, 25, 168);
+    border: 2px solid rgb(207, 25, 168); */
+    background-color: #82F7F5;
+}
+
+#hits, #score {
+    color: white;
+    font-size: 2.5em;
+    line-height: 0.2em;
+}
+
+.col-1 {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    flex-grow: 1;
+}
+
+.col-2 {
+    flex-grow: 1;
+}
+
+.col-3 {
+    flex-grow: 2;
+}
+
+.col-4 {
+    flex-grow: 2;
+}
+
+#displayOnHit {
+    display: none;
+    position: absolute;
+    text-align: center;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 10%;
+    font-family: Helvetica;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    -webkit-text-stroke: 1px black;
+}
+
+/* --- End --- */
+
+h1,
+input[type='text'] {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    height: 10%;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    background-color: #101010;
+    font-family: Helvetica;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+.endScore {
+    font-size: 1em;
+}
+
+input[type='text'] {
+    padding-left: 1em;
+}
+
+/* Responsive Design for Desktop */
+
+@media only screen and (min-width: 900px) {
+    #logo {
+        width: 50%;
+    }
+
+    #buttContainer {
+        top: 10%;
+    }
+
+    .song {
+        margin-bottom: 2.5%;
+        width: 80%;
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
+
+    h1,
+    input[type='text'],
+    .button {
+        width: 50%
+    }
+
+    #leaderboard {
+        width: 30%;
+    }
+
+    #back {
+        margin-top: 0;
+        margin-bottom: 5%;
+        width: 10%;
+    }
+
+    #lb {
+        width: 60%;
+    }
+
+    #backMorePadding {
+        margin-top: 10%;
+    }
+}

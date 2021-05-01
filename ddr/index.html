@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dance Dance Revolution</title>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <script type="text/javascript" src="js/database_function.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js";></script>
+</head>
+
+<body>      
+    <img id='logo' src='images/logo.png' alt='Dance Dance Revolution'>
+
+    <div id='buttContainer'>
+        <input id='play' class='button' type='button' value='Play'>
+        <input id='howToPlay' class='button' type='button' value='How to Play'>
+        <input id='leaderboard' class='button' type='button' value='Leaderboard'>
+    </div>
+
+    <script src='js/index.js'></script>
+
+    <script>
+        document.getElementById('play').onclick = goToSongSelect;
+        document.getElementById('howToPlay').onclick = goToHowToPlay;
+        document.getElementById('leaderboard').onclick = goToLeaderboard;
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dance Dance Revolution</title>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+</head>
+
+<body>
+    <img id='logo' src='images/logo.png' alt='Dance Dance Revolution'>
+
+    <div id='buttContainer'>
+        <input id='easy' class='button' type='button' value='Easy'>
+        <input id='medium' class='button' type='button' value='Medium'>
+        <input id='hard' class='button' type='button' value='Hard'>
+    </div>
+
+    <input id='backMorePadding' class='button' type='button' value='Back'>
+
+    <script src='js/index.js'></script>
+
+    <script>
+        document.getElementById('easy').onclick = function () { startGame('easy') };
+        document.getElementById('medium').onclick = function () { startGame('medium') };
+        document.getElementById('hard').onclick = function () { startGame('hard') };
+        document.getElementById('backMorePadding').onclick = goToSongSelect;
+    </script>
+</body>
+
+</html>

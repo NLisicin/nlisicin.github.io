@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dance Dance Revolution</title>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+</head>
+
+<body>
+    <img id='logo' src='images/logo.png' alt='Dance Dance Revolution'>
+
+    <div id='howToPlayDiv'>
+        <h4>How to Play</h4>
+        <p>Arrows will move from the bottom of the screen to the top. Your goal is to hit the corresponding arrow key or tap on the white arrow outline at the moment the arrow hits the outline. The more accurately you hit, the higher your score!</p>
+    </div>
+
+    <input id='back' class='button' type='button' value='Back'>
+
+    <script src='js/index.js'></script>
+
+    <script>
+        document.getElementById('back').onclick = goToMainMenu;
+    </script>
+</body>
+
+</html>

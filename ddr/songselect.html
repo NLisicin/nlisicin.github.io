@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dance Dance Revolution</title>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+</head>
+
+<body>
+    <img id='logo' src='images/logo.png' alt='Dance Dance Revolution'>
+
+    <div id='buttContainer'>
+        <input id='jojo' class='song' type='button' onclick = 'goToDifficultySelect(this.id)' value='Too Little Too Late - Jojo'>
+        <input id='intoyou' class='song' type='button' onclick = 'goToDifficultySelect(this.id)' value='Into You - Ariana Grande'>
+        <input id='backstreet' class='song' type='button' onclick = 'goToDifficultySelect(this.id)' value='I Want It That Way - Backstreet Boys'>
+        <input id='sept' class='song' type='button' onclick = 'goToDifficultySelect(this.id)' value='September - Earth Wind Fire'>
+        <input id='pizzapie' class='song' type='button' onclick = 'goToDifficultySelect(this.id)' value='Pizza Pie - System Of A Down'>
+        <input id='violeta' class='song' type='button' onclick = 'goToDifficultySelect(this.id)' value='Violeta - IZ*ONE'>
+        <input id='jesse' class='song' type='button' onclick = 'goToDifficultySelect(this.id)' value='Beautiful Soul - Jesse McCartney'>
+    </div>
+
+    <input id='backMorePadding' class='button' type='button' value='Back'>
+
+    <script src='js/index.js'></script>
+
+    <script>
+        document.getElementById('backMorePadding').onclick = goToMainMenu;
+    </script>
+</body>
+
+</html>

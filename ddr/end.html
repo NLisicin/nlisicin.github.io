@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dance Dance Revolution</title>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+    <script src="js/firebase_config.js"></script>
+    <script src="js/database_function.js"></script>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <script type="text/javascript" src="js/database_function.js"></script>
+</head>
+
+<body>
+    <img id='logo' src='images/logo.png' alt='Dance Dance Revolution'>
+
+    <h1>Your Score: <span id='lbscore'></span></h1>
+
+    <input id='namelb' type='text' placeholder='Enter your name'>
+    <input id='submit' class='button' type='submit' value='Add to Leaderboard'>
+
+    <input id='mainMenu' class='button' type='button' value='Main Menu'>
+
+    <script src='js/index.js'></script>
+    <script src='js/database_function.js'></script>
+
+    <script>
+        document.getElementById('submit').onclick = submitScore;
+        document.getElementById('mainMenu').onclick = goToMainMenu;
+        let queryString = window.location.href.split('?');
+        document.getElementById('lbscore').innerHTML = queryString[1] + "%";
+    </script>
+
+</body>
+
+</html>
