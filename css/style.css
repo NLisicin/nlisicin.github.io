@@ -1,5 +1,10 @@
 body {
-  font-family: "Baloo Tamma 2", cursive;
+  font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
 }
 
 h1 {
@@ -7,38 +12,40 @@ h1 {
   padding: 2%;
 }
 
-h1,
-.section {
-  margin-bottom: 5%;
+h4 {
+  margin-top: 5%;
 }
 
-.large-icon {
-  font-size: 40px !important;
+h5 {
+  margin-top: 0;
 }
 
-.dropdown-content {
-  top: -2%;
-  border-radius: 5px;
-}
-
-img {
-  padding: 10%;
+h6 {
+  font-weight: 300;
 }
 
 p {
   font-size: larger;
 }
 
-/* Contact Form */
-.input-field label {
-  color: #000;
+a {
+  color: white;
+  text-decoration: underline;
 }
 
-.input-field input[type="text"]:focus + label {
-  color: #000;
+ul {
+  text-align: left;
+  font-size: larger;
 }
 
-.input-field input[type="text"]:focus {
-  border-bottom: 1px solid #000;
-  box-shadow: 0 1px 0 0 #000;
+i {
+  font-size: 30px !important;
+}
+
+.card-panel {
+  margin-bottom: 5%;
+}
+
+#profile-buttons {
+  margin: 5%
 }
